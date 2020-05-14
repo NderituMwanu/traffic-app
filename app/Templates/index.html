@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title" style="font-family: 'DM Mono', monospace;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Pacifico', cursive; font-size: 90px; color:black; margin-bottom: 100px;">
+  <p>Traffic Road<br>Updates</p>
+  
+</h1>
+
+<h2 class="subtitle">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Pacifico&family=Quicksand&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</h2>
+<!-- <div class="jumbotron">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {% for post in posts %}
+      <div class="post-preview">
+        <a href="{{ url_for('auth.post', post_id=post.id) }}">
+          <h2 class="post-title">
+            <b style="color:black; font-size: 30px; font-family: 'DM Mono', monospace;">{{ post.title }}</b>
+          </h2>
+        </a>
+        <p class="post-meta" style="font-family: 'DM Mono', monospace;
+        font-family: 'Quicksand', sans-serif;">Posted by {{ post.username }} on {{ post.date.strftime('%B %d, %Y') }}</p>
+      </div>
+      {% endfor %}
+      <hr>
+    </div>
+  </div>
+</div>
+</div> -->
+
+{% endblock %}
