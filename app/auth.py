@@ -107,7 +107,7 @@ def new_post():
         db.session.add(post)
         db.session.commit()
         
-    return render_template('create_post.html', title='New Post', form=form)
+    return render_template('create_route.html', title='New Post', form=form)
 
 
 
