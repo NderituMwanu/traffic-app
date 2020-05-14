@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ROAD TRAFFIC UPDATE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+
 </head>
 
 <body>
@@ -23,9 +23,9 @@
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
                             <a href="{{ url_for('main.index') }}" class="navbar-item">
-                                 Home
+                                Home
                             </a>
-                            
+
                             {% if current_user.is_authenticated %}
                             <a href="{{ url_for('main.profile') }}" class="navbar-item">
                                 Profile
@@ -43,8 +43,8 @@
                             <a href="{{ url_for('auth.logout') }}" class="navbar-item">
                                 Logout
                             </a>
-                            <a href =" {{ url_for('auth.new_post') }}" class="navbar-item">
-                                See Your Route 
+                            <a href=" {{ url_for('auth.new_post') }}" class="navbar-item">
+                                See Your Route
                             </a>
                             {% endif %}
                         </div>
@@ -55,11 +55,47 @@
 
         <div class="hero-body">
             <div class="container has-text-centered">
-               {% block content %}
-               {% endblock %}
+                {% block content %}
+                {% endblock %}
             </div>
         </div>
     </section>
 </body>
+
+
+<div class="hero-body " style="margin-top: 5%;">
+    <div class="container has-text-centered">
+        <i class="clock icon"></i>
+        <p style="line-height: 200%;font-family:'Balsamiq Sans', cursive; font-size: 130%;">
+            Traffic Updates gives you all the information on
+            the traffic status of roads you are using, while in transit.<br>
+            We provide Accurate and relevant information on accidents/roadblocks as soon as their occur<br>
+            to prevent you from wasting time manouvering through that specific affected route.
+        </p>
+    </div>
+    <div class="container has-text-centered">
+        <img src="https://previews.123rf.com/images/goodshotalan/goodshotalan1201/goodshotalan120100036/12233362-cartoon-of-frustrated-motorist-on-freeway.jpg"
+            style="height:40%; width: 40%; margin-top: 7% ;">
+    </div>
+
+    <div class="container has-text-centered" style="margin-top: 7%;">
+        <p style="line-height: 200%;font-family:'Balsamiq Sans', cursive; font-size: 130%;">
+            Dont drive through the roads all furious due to the traffic<br>
+            sign up and get to your destination on time!
+        </p>
+    </div>
+    <div class="container has-text-centered">
+        <img src="https://thumbs.dreamstime.com/b/cartoon-traffic-cone-hand-drawn-holds-stop-road-sign-warning-sign-design-vector-illustration-construction-traffic-cone-160580526.jpg"
+            style="height:40%; width: 40%;">
+
+    </div>
+
+    <div class="container has-text-centered">
+        <p style="line-height: 200%;font-family:'Balsamiq Sans', cursive; font-size: 130%;">You dont need to stop, you
+            just have to go and be there on time! Get Notifications<br>
+            on all incidents along your route including roadbocks and accidents.</p>
+    </div>
+</div>
+
 
 </html>
