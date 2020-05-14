@@ -3,7 +3,7 @@
 Traffic App
 # Authors :
 
-Gerald Nderitu 
+Gerald Nderitu And
 Mohamed
 
 ### Project Description
